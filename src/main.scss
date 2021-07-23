@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    background: #11645f;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+
+    &-left{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+
+      &-figure{
+          width: 30%;
+      }
+      &-pic{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+      &-form{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+     &-label{
+         font-size: 3rem;
+         color: aliceblue;
+         text-align: center;
+     }
+     &-input{
+         border: none;
+         padding: 2rem 2.2rem;
+         font-size: 2rem;
+         color: white;
+         border-radius: 5rem;
+         background: transparent;
+         box-shadow: inset 6px 6px 15px rgba(0,0,0, .2), inset -6px -6px 15px rgba(255, 255, 255, .2);
+
+         &:focus{
+             outline: none;
+         }
+     }
+
+    }
+
+    &-right{
+       display: grid;place-items: center;
+       
+       &-box{
+           display: flex;
+           align-items: center;
+           padding: 2rem 3rem;
+           box-shadow: 6px 6px 10px rgba(0,0,0, .2), -6px -6px 10px rgba(255, 255, 255, .2);
+           border-radius: 2rem;
+       }
+    &-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.main-heading{
+    text-align: center;
+    font-size: 5rem;         
+}
+
+.btn{
+    background: transparent;
+    padding: 1rem;
+    font-size: 3rem;
+    border: 5px solid #11645f;
+    box-shadow:  4px 4px 10px rgba(0,0,0, .2),-4px -4px 10px rgba(255, 255, 255, .2), inset 4px 4px 10px rgba(0,0,0, .2), inset -4px -4px 10px rgba(255, 255, 255, .2);
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease-in;
+    margin:  1rem;
+    
+    &:hover{
+        transform: scale(1.01) translate(5px, 5px);
+    }
+
+    &:focus{
+        outline: none;
+    }
+    &:active{
+        outline: none;
+    }
+}}
+
+.sub-heading{
+    font-size: 2.5rem;
+    color: antiquewhite;
+    padding: 0 1rem;
+}
+
+.description{
+    font-size: 1.8rem;
+    color: aliceblue;
+    padding: 0 1rem;
+}
+
+.mt{
+    margin-top: 3rem;
+}
+
+.edit{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-form{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-btn{
+        background: transparent;
+        padding: 1rem;
+        font-size: 3rem;
+        border: 5px solid #11645f;
+        box-shadow:  4px 4px 10px rgba(0,0,0, .2),-4px -4px 10px rgba(255, 255, 255, .2), inset 4px 4px 10px rgba(0,0,0, .2), inset -4px -4px 10px rgba(255, 255, 255, .2);
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        transition: all .5s ease-in;
+        margin: 2rem 1rem;
+        
+        &:hover{
+            transform: scale(1.01) translate(5px, 5px);
+        }
+    
+        &:focus{
+            outline: none;
+        }
+        &:active{
+            outline: none;
+        }
+    }
+
+}
